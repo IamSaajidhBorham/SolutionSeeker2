@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editprofile"
+    tools:context="com.example.saajidh.solutionseeker.edit_profile">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="38dp"
+        android:text="Name: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView29"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="username" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Attending Year: "
+        android:textSize="18sp"
+        android:layout_below="@+id/uname"
+        android:layout_alignStart="@+id/textView29" />
+
+    <CheckBox
+        android:id="@+id/y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView31"
+        android:text="1st Year" />
+
+    <CheckBox
+        android:id="@+id/y2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd Year"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_toEndOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/y1"
+        android:layout_marginTop="30dp"
+        android:text="Email: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/uemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/uname"
+        android:layout_below="@+id/y1"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="useremail" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_below="@+id/uemail"
+        android:layout_marginTop="31dp"
+        android:text="Skills:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView35"
+        android:layout_below="@+id/textView35"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
+        android:text="DCCN-I"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_below="@+id/textView37"
+        android:layout_marginTop="21dp"
+        android:text="IPE"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_below="@+id/textView38"
+        android:layout_marginTop="26dp"
+        android:text="MIT"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_below="@+id/textView39"
+        android:layout_marginTop="19dp"
+        android:text="CF"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/dccn1spinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView37"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textView37" />
+
+    <Spinner
+        android:id="@+id/ipespinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/textView39"
+        android:layout_alignStart="@+id/dccn1spinner" />
+
+    <Spinner
+        android:id="@+id/mitspinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView39"
+        android:layout_alignStart="@+id/ipespinner" />
+
+    <Spinner
+        android:id="@+id/cfspinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/mitspinner"
+        android:layout_alignTop="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST-I"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/dccn1spinner"
+        android:layout_alignEnd="@+id/uemail"
+        android:layout_marginEnd="41dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_alignTop="@+id/textView38"
+        android:text="DBMS-I"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView42"
+        android:layout_alignTop="@+id/mitspinner"
+        android:text="ITA"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView43"
+        android:layout_alignTop="@+id/cfspinner"
+        android:text="FCS"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/st1spinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41" />
+
+    <Spinner
+        android:id="@+id/dbms1spinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView42"
+        android:layout_toEndOf="@+id/textView41" />
+
+    <Spinner
+        android:id="@+id/itaspinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/dbms1spinner"
+        android:layout_alignTop="@+id/mitspinner" />
+
+    <Spinner
+        android:id="@+id/fcsspinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/itaspinner"
+        android:layout_alignTop="@+id/textView40" />
+
+    <Button
+        android:id="@+id/editdone"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView44"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/textView42"
+        android:text="Done" />
+
+</RelativeLayout>

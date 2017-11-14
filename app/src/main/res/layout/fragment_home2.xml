@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".home2"
+    android:clickable="true"
+    android:id="@+id/homelayout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="370dp"
+        android:layout_height="320dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dummy" />
+
+    <Button
+        android:id="@+id/dummy"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:onClick="myFancyMethod"
+        android:text="Add Post" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/dummy"
+        android:text="Search" />
+
+</RelativeLayout>

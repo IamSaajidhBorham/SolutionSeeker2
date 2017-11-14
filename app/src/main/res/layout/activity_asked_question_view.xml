@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/answer2"
+    tools:context="com.example.saajidh.solutionseeker.AskedQuestionView">
+
+    <TextView
+        android:id="@+id/theQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Reply"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/theReply"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="62dp"
+        android:text="Reply" />
+
+    <EditText
+        android:id="@+id/theReply"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/theQuestion"
+        android:layout_alignStart="@+id/theQuestion" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/theReply"
+        android:layout_below="@+id/theQuestion"
+        android:layout_marginTop="28dp"
+        android:text="Your Reply: " />
+
+</RelativeLayout>

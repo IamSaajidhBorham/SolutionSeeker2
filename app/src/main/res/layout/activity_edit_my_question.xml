@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editquestion1"
+    tools:context="com.example.saajidh.solutionseeker.editMyQuestion">
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="35dp"
+        android:text="Question:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/myQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="questioin"
+        android:layout_below="@+id/textView46"
+        android:layout_alignStart="@+id/textView46" />
+
+    <Button
+        android:id="@+id/btnDoneEditingMyQuestion"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myQuestion"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/myQuestion"
+        android:text="Done" />
+</RelativeLayout>

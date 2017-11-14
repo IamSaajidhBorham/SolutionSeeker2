@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/viewprofile"
+    tools:context="layout.profile2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="37dp"
+        android:text="Name :"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="username" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:text="Attending Year :" />
+
+    <TextView
+        android:id="@+id/attendingyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/textView17"
+        android:text="attendingyear" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="15dp"
+        android:text="Email :" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_toEndOf="@+id/name"
+        android:text="emailadd" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="17dp"
+        android:text="Skills" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="DCCN-I"
+        android:layout_below="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/dccni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toEndOf="@+id/textView17"
+        android:text="dccn1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:layout_marginTop="11dp"
+        android:text="IPE" />
+
+    <TextView
+        android:id="@+id/ipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dccni"
+        android:layout_alignTop="@+id/textView24"
+        android:text="ipe" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="11dp"
+        android:text="MIT" />
+
+    <TextView
+        android:id="@+id/mit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignStart="@+id/ipe"
+        android:text="mit" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CF"
+        android:layout_below="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/cf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mit"
+        android:layout_alignTop="@+id/textView28"
+        android:text="cf" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ST-I"
+        android:layout_alignBaseline="@+id/dccni"
+        android:layout_alignBottom="@+id/dccni"
+        android:layout_toEndOf="@+id/attendingyear"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/sti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="st1"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_toEndOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_alignTop="@+id/ipe"
+        android:text="DBMS-I" />
+
+    <TextView
+        android:id="@+id/dbmsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_alignStart="@+id/sti"
+        android:text="dbms1" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mit"
+        android:layout_alignStart="@+id/textView32"
+        android:text="ITA" />
+
+    <TextView
+        android:id="@+id/ita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dbmsi"
+        android:layout_alignTop="@+id/textView34"
+        android:text="ita" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FCS"
+        android:layout_alignBaseline="@+id/cf"
+        android:layout_alignBottom="@+id/cf"
+        android:layout_alignStart="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/fcs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fcs"
+        android:layout_alignBaseline="@+id/textView36"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_alignStart="@+id/ita" />
+
+    <Button
+        android:id="@+id/ChangePwd"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="40dp"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/editprofile"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ChangePwd"
+        android:layout_alignBottom="@+id/ChangePwd"
+        android:layout_toEndOf="@+id/email"
+        android:text="Edit Profile" />
+</RelativeLayout>
